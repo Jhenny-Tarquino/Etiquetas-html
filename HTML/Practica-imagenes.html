@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="../index.html">volver a pagina principal</a>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+        input {
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>PRACTICA DE IMAGENES</h1>
+    <img id="preview" src="imagen-default.jpg" alt="Imagen por defecto">
+
+    <input type="file" id="fileInput" accept="image/*">
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0]; 
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview').src = e.target.result; 
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <hr>
+    <img id="preview" src="imagen-default.jpg" alt="Imagen por defecto">
+
+    <input type="file" id="fileInput" accept="image/*">
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0]; 
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview').src = e.target.result; 
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <hr>
+    <img id="preview" src="imagen-default.jpg" alt="Imagen por defecto">
+
+    <input type="file" id="fileInput" accept="image/*">
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0]; 
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview').src = e.target.result; 
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <hr>
+    <img id="preview" src="imagen-default.jpg" alt="Imagen por defecto">
+
+    <input type="file" id="fileInput" accept="image/*">
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0]; 
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview').src = e.target.result; 
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <hr>
+    <img id="preview" src="imagen-default.jpg" alt="Imagen por defecto">
+
+    <input type="file" id="fileInput" accept="image/*">
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0]; 
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview').src = e.target.result; 
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+    
+   
+</body>
+</html>

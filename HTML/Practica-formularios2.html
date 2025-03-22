@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIOS AVANZADOS</h1>
+   <a href="../index.html">VOLVER A LA PAGINA PRINCIPAL</a> 
+    <h2>Primer formulario</h2>
+    <h3>1</h3>
+   <form action="" method="post"></form>
+   <label>CODIGO DE USUARIO</label><br>
+   <input type="text" name="codigo_usuario" id="codigo_usuario" value="usr12345" readonly><br><br>
+   <button type="submit">ENVIAR</button>
+   <hr>
+   <h2>2</h2>
+   <form action="" method="post">
+   <label>nombre de usuario:</label><br>
+   <input type="text" id="nombre de usuario"  name="nombre de usuario" value="Jhenny Tarquino" disabled><br><br>
+  <input type="reset">
+  <input type="submit">
+</form>
+<hr>
+<h3>3</h3>
+<form action="" method="post"></form>
+<label for="nombre">Nombre Completo:</label><br>
+<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required><br><br>
+<label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 123-333-7890" required><br><br>
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe algún comentario adicional..."></textarea><br><br>
+        <button type="submit">ENVIAR</button>
+<hr>
+<h3> segundo formulario</h3>
+<h3>1</h3>
+<label for="fruta">elige tu fruta favorita</label><br>
+<select name="fruta" id="fruta">
+<option value="naranja">naranja</option>
+<option value="platano">platano</option>
+<option value="manzana">manzana</option>
+<option value="ciruelo">ciruelo</option>
+</select><br><br>
+<hr>
+<h3>2</h3>
+<label>elige un pais</label><br><br>
+<select id="pais" name="pais">
+  <optgroup label="italia">
+    <option value="francia">francia</option>
+    <option value="colombia">colombia</option>
+    <option value="mexico">mexico</option>
+    <option value="argentina">argentina</option>
+  </optgroup>
+</select><br><br>
+<hr>
+<h3>3</h3>
+<label>ELIGE UN COLOR:</label><br>
+  <input list="color" id="color" name="color">
+  <details id="color">
+    <option value="rojo">rojo</option>
+    <option value="amarillo">amarillo</option>
+    <option value="verde">verde</option>
+    <option value="azul">azul</option>
+  </details><br>
+  <h3>TERCER FORMULARIO</h3>
+<li>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="user_name" />
+  </li>
+  <li>
+    <label for="mail">Correo electrónico:</label>
+    <input type="email" id="mail" name="user_mail" />
+  </li>
+  <li>
+    <label for="edad">edad:</label>
+    <input type="number" required>
+  </li>
+  <label> fecha de nacimiento:</label>
+  <input type="date">
+  <label for="numero de celular">celular:</label>
+  <input type="number">
+  <label>foto</label>
+  <input type="file">
+  <br>
+  <label for="carrera" class="campo-obligatorio">Carrera:</label><br>
+        <select id="carrera" name="carrera" required>
+            <option value="">Selecciona tu carrera</option>
+            <option value="">DGP</option>
+            <option value="">ADM</option>
+            <option value="">MED</option>
+            <option value="">ODT</option>
+        </select><br>
+        <label for="materias" class="campo-obligatorio">Materias a Inscribir:</label><br>
+        <input type="checkbox" id="matematicas" name="materias" value="Matemáticas I">
+        <label for="matematicas">Publicidad I</label><br>
+        <input type="checkbox" id="fisica" name="materias" value="Física I">
+        <label for="fisica">Dibujo vectorial</label><br>
+        <input type="checkbox" id="programacion" name="materias" value="Programación I">
+        <label for="programacion">Programación I</label><br>
+        <input type="checkbox" id="quimica" name="materias" value="Química I">
+        <label for="quimica">RedaccionI</label><br><br>
+
+        <small class="texto-ayuda">Selecciona las materias que deseas inscribir. Puedes elegir varias.</small><br><br>
+        <label for="fecha_inscripcion" class="campo-obligatorio">Fecha de Inscripción:</label><br>
+        <input type="date" id="fecha_inscripcion" name="fecha_inscripcion" required><br><br>
+        <button type="submit">Inscribir</button>
+</body>
+</html>
